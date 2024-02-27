@@ -6,7 +6,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
-// $routes->get('/', 'Home::index');
+$routes->get('/', 'Produk::index');
 
 $routes->group('produk', ['namespace' => 'App\Controllers'], function ($routes) {
     $routes->get('/', 'Produk::index');
